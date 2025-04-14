@@ -108,9 +108,9 @@ const App = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container bg-gray-950">
       <div className="flex flex-col items-center justify-center py-10">
-        <h1 className="text-5xl font-bold mb-10">Tic Tac Toe</h1>
+        <h1 className="text-5xl font-bold mb-10 text-amber-200">Tic Tac Toe</h1>
 
         <div className="w-[70rem] max-w-[600px] grid grid-cols-3 border rounded overflow-hidden shadow-lg">
           {spaces.map((s, i) => (
@@ -125,7 +125,7 @@ const App = () => {
                   ? "text-red-500"
                   : "text-gray-400"
               }
-              hover:bg-gray-100`}
+              hover:bg-gray-800`}
             >
               {s === "*" ? " " : s}
             </div>
